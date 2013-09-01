@@ -18,4 +18,4 @@ To end the game and reset (so that returning will create a new game) hit the bac
 
 Build
 --------------
-Open this project and build it in Eclipse. The current code was developed and tested on Kepler using Android version 4.3, but should work on other versions as well.
+Open this project and build it in Eclipse. The current code was developed and tested on Kepler using Android version 4.3, but should work on other versions as well. When checking out via Github via EGit, make sure to use "Import existing projects."
