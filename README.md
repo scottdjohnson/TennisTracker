@@ -10,5 +10,12 @@ This application assumes a "best of five" match, but of course a best of three m
 
 To view the stats at any time, click the action overflow button and choose stats. To return to the match, click the back button.
 
-Navigating away and resetting:
-To navigate away from the application, hit the home button. To end the game and reset (so that returning will create a new game) hit the back button.
+Navigating away and resetting
+--------------
+To navigate away from the application, hit the home button. 
+
+To end the game and reset (so that returning will create a new game) hit the back button.
+
+Build
+--------------
+Open this project and build it in Eclipse. The current code was developed and tested on Kepler using Android version 4.3, but should work on other versions as well.
