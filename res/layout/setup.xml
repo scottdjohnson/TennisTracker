@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+		<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">		
+
+		    <RadioGroup
+      			android:layout_width="fill_parent"
+      			android:layout_height="wrap_content"
+      			android:orientation="vertical">
+
+			<TextView android:id="@+id/playerA" 
+				android:text="Player A"
+		       	android:layout_width="100dip" 
+		       	android:layout_height="wrap_content" />
+			
+			<EditText
+        		android:id="@+id/playerAName"
+				android:text="@string/playerAName"
+		       	android:layout_width="300dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerA" />
+
+			<TextView android:id="@+id/playerB" 
+				android:text="Player B"
+		       	android:layout_width="100dip" 
+		       	android:layout_height="wrap_content" 		       	
+		       	android:layout_below="@+id/playerAName" />
+		       	
+
+			<EditText
+        		android:id="@+id/playerBName"
+				android:text="@string/playerBName"
+		       	android:layout_width="300dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerB"/>
+		       	
+    		</RadioGroup>
+
+		<!-- 
+			<TextView android:id="@+id/playerA" 
+				android:text="@string/playerA"
+		       	android:layout_width="100dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_toRightOf="@+id/winners"	/>
+			<TextView android:id="@+id/playerB" 
+				android:text="@string/playerB"
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content" 
+	    		android:layout_toRightOf="@+id/playerA"	/>
+
+			<TextView android:id="@+id/winners" 
+				android:text="@string/winners"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerA" />
+		-->
+		     	  	
+		</RelativeLayout>
+
+</LinearLayout>
+
+

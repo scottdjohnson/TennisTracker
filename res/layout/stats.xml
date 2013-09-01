@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+		<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">		
+
+			<TextView android:id="@+id/playerA" 
+				android:text="@string/playerAName"
+		       	android:layout_width="100dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_toRightOf="@+id/winners"	/>
+	
+			<TextView android:id="@+id/playerB" 
+				android:text="@string/playerBName"
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content" 
+	    		android:layout_toRightOf="@+id/playerA"	/>
+
+			<TextView android:id="@+id/winners" 
+				android:text="@string/winners"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerA" />
+	
+			<TextView android:id="@+id/errors" 
+				android:text="@string/errors"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/winners"/>
+
+			<TextView android:id="@+id/aces" 
+				android:text="@string/aces"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/errors"/>
+
+			<TextView android:id="@+id/doubleFaults" 
+				android:text="@string/doubleFaults"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/aces"/>
+
+			<TextView android:id="@+id/firstServePercentage" 
+				android:text="@string/firstServePercentage"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/doubleFaults"/>
+
+			<TextView android:id="@+id/firstServePointsWon" 
+				android:text="@string/firstServePointsWon"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/firstServePercentage"/>
+
+			<TextView android:id="@+id/secondServePointsWon" 
+				android:text="@string/secondServePointsWon"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/firstServePointsWon"/>
+
+			<TextView android:id="@+id/pointsWon" 
+				android:text="@string/points"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/secondServePointsWon" />		     
+
+			<TextView android:id="@+id/playerAwinners" 
+				android:text="@string/zero"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_toRightOf="@+id/winners"
+		       	android:layout_below="@+id/playerA" />
+
+			<TextView android:id="@+id/playerAerrors" 
+				android:text="@string/zero"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerAwinners" 
+		       	android:layout_toRightOf="@+id/errors"/>
+
+			<TextView android:id="@+id/playerAaces" 
+				android:text="@string/zero"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerAerrors" 
+		       	android:layout_toRightOf="@+id/aces"/>
+
+			<TextView android:id="@+id/playerAdoubleFaults" 
+				android:text="@string/zero"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerAaces" 
+		       	android:layout_toRightOf="@+id/doubleFaults"/>		       	
+
+			<TextView android:id="@+id/playerAfirstServePercentage" 
+				android:text="@string/zero"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/doubleFaults" 
+		       	android:layout_toRightOf="@+id/firstServePercentage"/>
+
+			<TextView android:id="@+id/playerAfirstServePointsWon" 
+				android:text="@string/zero"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerAfirstServePercentage" 
+		       	android:layout_toRightOf="@+id/firstServePointsWon"/>
+		       	
+			<TextView android:id="@+id/playerAsecondServePointsWon" 
+				android:text="@string/zero"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerAfirstServePointsWon" 
+		       	android:layout_toRightOf="@+id/secondServePointsWon"/>
+				       	
+			<TextView android:id="@+id/playerApointsWon" 
+				android:text="@string/zero"
+		       	android:layout_width="120dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerAsecondServePointsWon" 
+		       	android:layout_toRightOf="@+id/pointsWon"/>		     
+
+			<TextView android:id="@+id/playerBwinners" 
+				android:text="@string/zero"
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_toRightOf="@+id/playerAwinners"
+		       	android:layout_below="@+id/playerB" />
+
+			<TextView android:id="@+id/playerBerrors" 
+				android:text="@string/zero"
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_toRightOf="@+id/playerAerrors"
+		       	android:layout_below="@+id/playerBwinners" />
+		       	
+			<TextView android:id="@+id/playerBaces" 
+				android:text="@string/zero"
+		       	android:layout_width="100dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerBerrors" 
+		       	android:layout_toRightOf="@+id/playerAaces"/>
+
+			<TextView android:id="@+id/playerBdoubleFaults" 
+				android:text="@string/zero"
+		       	android:layout_width="100dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerBaces" 
+		       	android:layout_toRightOf="@+id/playerAdoubleFaults"/>		       	
+
+			<TextView android:id="@+id/playerBfirstServePercentage" 
+				android:text="@string/zero"
+		       	android:layout_width="100dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerBdoubleFaults" 
+		       	android:layout_toRightOf="@+id/playerAfirstServePercentage"/>
+
+			<TextView android:id="@+id/playerBfirstServePointsWon" 
+				android:text="@string/zero"
+		       	android:layout_width="100dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerBfirstServePercentage" 
+		       	android:layout_toRightOf="@+id/playerAfirstServePointsWon"/>
+		       	
+			<TextView android:id="@+id/playerBsecondServePointsWon" 
+				android:text="@string/zero"
+		       	android:layout_width="100dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerBfirstServePointsWon" 
+		       	android:layout_toRightOf="@+id/playerAsecondServePointsWon"/>		     
+		       			       	
+			<TextView android:id="@+id/playerBpointsWon" 
+				android:text="@string/zero"
+		       	android:layout_width="100dip" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerBsecondServePointsWon" 
+		       	android:layout_toRightOf="@+id/playerApointsWon"/>		     
+		       	
+		</RelativeLayout>
+
+</LinearLayout>
+
+

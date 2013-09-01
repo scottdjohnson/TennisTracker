@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The top view is a layout manager that places its child views into
+     a row, here set to be vertical (so the first is at the top) -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+   <LinearLayout android:layout_width="fill_parent" 
+   		android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical" 
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="@drawable/semi_black">
+
+        <Button android:id="@+id/ace" style="@style/ActionButton"
+            android:text="@string/ace" />
+        <Button android:id="@+id/se" style="@style/ActionButton"
+            android:text="@string/se" />
+
+	</LinearLayout>
+
+    <!-- Next view is another linear layout manager, now horizontal.  We
+         give it a custom background; see colors.xml for the definition
+         of drawable/semi_black-->
+    <LinearLayout
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical" android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/semi_black">
+
+	<TextView android:id="@+id/playerA" android:text="@string/playerAName"
+		android:layout_width="100px" android:layout_height="50px"
+		  />
+
+		<RelativeLayout            
+			android:layout_width="fill_parent" android:layout_height="wrap_content">		
+
+			<TextView android:id="@+id/playerApoints" android:text="@string/playerApoints"
+		       android:layout_width="wrap_content" android:layout_height="wrap_content"
+			 />
+	
+	    	<Button android:id="@+id/aw" 
+	    		style="@style/ActionButton"
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content"
+        		android:text="@string/aw" 
+        		android:layout_toRightOf="@+id/playerApoints"
+        		android:layout_alignParentRight="true"
+        		android:layout_marginLeft="100dip"
+        		/>
+
+	        <Button android:id="@+id/ae" style="@style/ActionButton"
+		       android:layout_width="wrap_content" android:layout_height="wrap_content"
+            	android:text="@string/ae" 
+        		android:layout_toRightOf="@+id/playerApoints"            	
+            	android:layout_below="@+id/aw"
+        		android:layout_alignParentRight="true"
+        		android:layout_marginLeft="100dip"
+            	/>
+
+		</RelativeLayout>
+
+
+	<TextView android:id="@+id/playerB" android:text="@string/playerBName"
+		android:layout_width="100px" android:layout_height="50px" />
+		
+		<RelativeLayout            
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content">		
+
+			<TextView android:id="@+id/playerBpoints" 
+				android:text="@string/playerBpoints"
+		       android:layout_width="wrap_content" 
+		       android:layout_height="wrap_content" />
+	
+	    	<Button android:id="@+id/bw" 
+	    		style="@style/ActionButton"
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content"
+        		android:text="@string/bw" 
+        		android:layout_alignParentRight="true"
+        		android:layout_marginLeft="100dip"
+        		android:layout_toRightOf="@+id/playerBpoints"
+        		/>
+
+	        <Button android:id="@+id/be" 
+	        	style="@style/ActionButton"
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content"
+            	android:text="@string/be" 
+        		android:layout_toRightOf="@+id/playerBpoints"            	
+            	android:layout_below="@+id/bw"
+        		android:layout_alignParentRight="true"
+        		android:layout_marginLeft="100dip"
+            	/>
+		</RelativeLayout>
+
+		<RelativeLayout            
+			android:layout_width="fill_parent" android:layout_height="wrap_content">		
+
+			<TextView android:id="@+id/playerAserves" 
+				android:text="   "
+		       android:layout_width="wrap_content" 
+		       android:layout_height="wrap_content" />
+
+			<TextView android:id="@+id/playerA" 
+				android:text="@string/playerAName"
+		       android:layout_width="wrap_content" 
+		       android:layout_height="wrap_content" 
+		       android:layout_toRightOf="@+id/playerAserves"/>
+		       
+			<TextView android:id="@+id/playerAgames0" 
+		       android:layout_width="wrap_content" 
+		       android:layout_height="wrap_content" 
+		       android:layout_toRightOf="@+id/playerA" 
+		       android:layout_marginLeft="10dip" />
+			
+			<TextView android:id="@+id/playerAgames1" 
+		       android:layout_width="wrap_content" 
+		       android:layout_height="wrap_content" 
+		       android:layout_toRightOf="@+id/playerAgames0" 
+		       android:layout_marginLeft="10dip" />
+
+			<TextView android:id="@+id/playerAgames2" 
+		       android:layout_width="wrap_content" 
+		       android:layout_height="wrap_content" 
+		       android:layout_toRightOf="@+id/playerAgames1" 
+		       android:layout_marginLeft="10dip" />
+
+			<TextView android:id="@+id/playerBserves" 
+				android:text="   "
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerAserves" />
+
+			<TextView android:id="@+id/playerB" 
+				android:text="@string/playerBName"
+		       android:layout_width="wrap_content" 
+		       android:layout_height="wrap_content" 
+		       	android:layout_toRightOf="@+id/playerBserves" 
+		       android:layout_below="@+id/playerA" />
+
+			<TextView android:id="@+id/playerBgames0" 
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerA" 
+		       	android:layout_toRightOf="@+id/playerB" 
+		       	android:layout_marginLeft="10dip"/>
+
+			<TextView android:id="@+id/playerBgames1" 
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerAgames1" 
+		       	android:layout_toRightOf="@+id/playerBgames0" 
+		       	android:layout_marginLeft="10dip"/>
+			 
+			<TextView android:id="@+id/playerBgames2" 
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerAgames2" 
+		       	android:layout_toRightOf="@+id/playerBgames1" 
+		       	android:layout_marginLeft="10dip"/>
+
+			<TextView android:id="@+id/victory" 
+				android:text=""
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="wrap_content" 
+		       	android:layout_below="@+id/playerBgames2" 
+		       	android:layout_marginLeft="120dip"
+		       	/>
+
+			<TextView android:id="@+id/winner" 
+				android:text=""
+		       	android:layout_width="wrap_content" 
+		       	android:layout_height="fill_parent" 
+		       	android:layout_toRightOf="@+id/victory" 
+		       	android:layout_below="@+id/playerBgames2"
+		       	/>
+
+		</RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+

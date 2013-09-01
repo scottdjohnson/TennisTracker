@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- This file contains resource definitions for displayed strings, allowing
+     them to be changed based on the locale and options. -->
+
+<resources>
+    <!-- Simple strings. -->
+    <string name="tennistracker_app">Tennis Tracker</string>
+    <string name="aw">A winner</string>
+    <string name="ae">A error</string>
+    <string name="bw">B winner</string>
+    <string name="be">B error</string>
+    <string name="ace">Ace</string>
+    <string name="se">Second Serve</string>
+    <string name="playerAName">player A</string>
+    <string name="playerApoints">0</string>
+    <string name="playerAgames">0</string>
+    <string name="playerBName">player B</string>
+    <string name="playerBpoints">0</string>
+    <string name="playerBgames">0</string>
+
+    <string name="back">back</string>
+    <string name="setup">setup</string>
+    <string name="stats">stats</string>
+    
+    <!-- Stats strings -->
+    <string name="winners">Winners</string>
+    <string name="errors">Errors</string>
+    <string name="firstServePercentage">1st Serves</string>
+    <string name="firstServePointsWon">1st Serves Won</string>
+    <string name="secondServePointsWon">2nd Serves Won</string>
+    <string name="aces">Aces</string>
+    <string name="doubleFaults">Double Faults</string>
+    <string name="points">Points</string>
+    
+    <string name="zero">0</string>
+    
+    <!-- This is a complex string containing style runs. -->
+    <string name="main_label">test</string>
+</resources>
+
